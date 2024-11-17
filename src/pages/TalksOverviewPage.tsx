@@ -2,7 +2,6 @@ import TalkList from '../components/talks/TalkList';
 import { useContext } from 'react';
 import { DataContext } from '../context/DataContext';
 
-
 const TalksOverviewPage = () => {
   const context = useContext(DataContext);
 
@@ -19,7 +18,6 @@ const TalksOverviewPage = () => {
         <p>Loading...</p>
       ) : (
         <TalkList talks={talks} />
-      
       )}
     </>
   );
